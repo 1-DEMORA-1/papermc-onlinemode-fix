@@ -31,7 +31,7 @@ index xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx..yyyyyyyyyyyyyyyyyyyyyyyyyyyy
          this.allowFlight = this.get("allow-flight", false);
          this.motd = this.get("motd", "A Minecraft Server");
          this.forceGamemode = this.get("force-gamemode", false);
-
+```
 # by DEMORA
 
 Оригинальный репозиторий PaperMC: https://github.com/PaperMC/Paper
