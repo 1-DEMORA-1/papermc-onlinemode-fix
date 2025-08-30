@@ -1,0 +1,12 @@
+name: Delta-Test-Plugin
+version: ${version}
+main: io.papermc.testplugin.TestPlugin
+description: Delta Test Plugin
+author: PaperMC
+api-version: ${apiversion}
+load: STARTUP
+bootstrapper: io.papermc.testplugin.TestPluginBootstrap
+loader: io.papermc.testplugin.TestPluginLoader
+defaultPerm: FALSE
+permissions:
+dependencies:
