@@ -8,8 +8,9 @@ Paper [![Paper Build Status](https://img.shields.io/github/actions/workflow/stat
 ## Всё просто, при- запуске сервера в файле server.-properties параметр online-mode
 ## автоматически стоит на false.
 
-## Скомпелированный jar файл вы можете скачать 
+## Скомпелированный jar файл вы можете скачать тут:
 
+## Вот новый патч:
 ```0From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Paper Developer <paper@papermc.io>
 Date: $(date)
