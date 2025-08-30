@@ -167,7 +167,7 @@ index 0000000000000000000000000000000000000000..19ee43e1ca053574a0151b4c43b01972
 +    }
 +
 +    private void registerCommand(final Server server) {
-+        server.getCommandMap().register(COMMAND_NAME, "delta", new CommandImpl(COMMAND_NAME));
++        server.getCommandMap().register(COMMAND_NAME, "paper", new CommandImpl(COMMAND_NAME));
 +    }
 +
 +    public void tickStart() {

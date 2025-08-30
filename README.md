@@ -1,4 +1,4 @@
-Delta [![Delta Build Status](https://img.shields.io/github/actions/workflow/status/PaperMC/Paper/build.yml?branch=master)](https://github.com/PaperMC/Paper/actions)
+Paper [![Paper Build Status](https://img.shields.io/github/actions/workflow/status/PaperMC/Paper/build.yml?branch=master)](https://github.com/PaperMC/Paper/actions)
 [![Discord](https://img.shields.io/discord/289587909051416579.svg?label=&logo=discord&logoColor=ffffff&color=7389D8&labelColor=6A7EC2)](https://discord.gg/papermc)
 [![GitHub Sponsors](https://img.shields.io/github/sponsors/papermc?label=GitHub%20Sponsors)](https://github.com/sponsors/PaperMC)
 [![Open Collective](https://img.shields.io/opencollective/all/papermc?label=OpenCollective%20Sponsors)](https://opencollective.com/papermc)
@@ -12,21 +12,21 @@ The most widely used, high-performance Minecraft server that aims to fix gamepla
 
 How To (Server Admins)
 ------
-Deltaclip is a jar file that you can download and run just like a normal jar file.
+Paperclip is a jar file that you can download and run just like a normal jar file.
 
-Download Delta from our [downloads page](https://papermc.io/downloads/paper).
+Download Paper from our [downloads page](https://papermc.io/downloads/paper).
 
-Run the Deltaclip jar directly from your server. Just like old times
+Run the Paperclip jar directly from your server. Just like old times
 
-* Documentation on using Delta: [docs.papermc.io](https://docs.papermc.io)
+* Documentation on using Paper: [docs.papermc.io](https://docs.papermc.io)
 * For a sneak peek at upcoming features, [see here](https://github.com/PaperMC/Paper/projects)
 
 How To (Plugin Developers)
 ------
 * See our API patches [here](patches/api)
 * See upcoming, pending, and recently added API [here](https://github.com/orgs/PaperMC/projects/2/views/4)
-* Delta API javadocs here: [papermc.io/javadocs](https://papermc.io/javadocs/)
-#### Repository (for delta-api)
+* Paper API javadocs here: [papermc.io/javadocs](https://papermc.io/javadocs/)
+#### Repository (for paper-api)
 ##### Maven
 
 ```xml
@@ -39,7 +39,7 @@ How To (Plugin Developers)
 ```xml
 <dependency>
     <groupId>io.papermc.paper</groupId>
-    <artifactId>delta-api</artifactId>
+    <artifactId>paper-api</artifactId>
     <version>1.21-R0.1-SNAPSHOT</version>
     <scope>provided</scope>
 </dependency>
@@ -53,7 +53,7 @@ repositories {
 }
 
 dependencies {
-    compileOnly("io.papermc.paper:delta-api:1.21-R0.1-SNAPSHOT")
+    compileOnly("io.papermc.paper:paper-api:1.21-R0.1-SNAPSHOT")
 }
 
 java {
@@ -63,7 +63,7 @@ java {
 
 How To (Compiling Jar From Source)
 ------
-To compile Delta, you need JDK 21 and an internet connection.
+To compile Paper, you need JDK 21 and an internet connection.
 
 Clone this repo, run `./gradlew applyPatches`, then `./gradlew createMojmapBundlerJar` from your terminal. You can find the compiled jar in the project root's `build/libs` directory.
 
@@ -77,7 +77,7 @@ Support Us
 ------
 First of all, thank you for considering helping out, we really appreciate that!
 
-PaperMC has various recurring expenses, mostly related to infrastructure. Delta uses [Open Collective](https://opencollective.com/) via the [Open Source Collective fiscal host](https://opencollective.com/opensource) to manage expenses. Open Collective allows us to be extremely transparent, so you can always see how your donations are used. You can read more about financially supporting PaperMC [on our website](https://papermc.io/sponsors).
+PaperMC has various recurring expenses, mostly related to infrastructure. Paper uses [Open Collective](https://opencollective.com/) via the [Open Source Collective fiscal host](https://opencollective.com/opensource) to manage expenses. Open Collective allows us to be extremely transparent, so you can always see how your donations are used. You can read more about financially supporting PaperMC [on our website](https://papermc.io/sponsors).
 
 You can find our collective [here](https://opencollective.com/papermc), or you can donate via GitHub Sponsors [here](https://github.com/sponsors/PaperMC), which will also go towards the collective.
 
@@ -90,7 +90,7 @@ Special Thanks To:
 
 [<img src="https://user-images.githubusercontent.com/21148213/121807008-8ffc6700-cc52-11eb-96a7-2f6f260f8fda.png" alt="" width="150">](https://www.jetbrains.com)
 
-[JetBrains](https://www.jetbrains.com/), creators of the IntelliJ IDEA, supports Delta with one of their [Open Source Licenses](https://www.jetbrains.com/opensource/). IntelliJ IDEA is the recommended IDE for working with Delta, and most of the Delta team uses it.
+[JetBrains](https://www.jetbrains.com/), creators of the IntelliJ IDEA, supports Paper with one of their [Open Source Licenses](https://www.jetbrains.com/opensource/). IntelliJ IDEA is the recommended IDE for working with Paper, and most of the Paper team uses it.
 
 All our sponsors!  
 [![Sponsor Image](https://raw.githubusercontent.com/PaperMC/papermc.io/data/sponsors.png)](https://papermc.io/sponsors)

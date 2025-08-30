@@ -108,7 +108,7 @@ paperweight {
 }
 
 tasks.generateDevelopmentBundle {
-    apiCoordinates = "io.papermc.delta:delta-api"
+    apiCoordinates = "io.papermc.paper:paper-api"
     libraryRepositories.addAll(
         "https://repo.maven.apache.org/maven2/",
         paperMavenPublicUrl,
@@ -142,7 +142,7 @@ tasks.register("printMinecraftVersion") {
     }
 }
 
-tasks.register("printDeltaVersion") {
+tasks.register("printPaperVersion") {
     doLast {
         println(project.version)
     }

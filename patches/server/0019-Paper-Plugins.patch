@@ -23,7 +23,7 @@ index 5e5ec700a368cfdaa1ea0b3f0fa82089895d4b92..72f2e81b9905a0d57ed8e2a88578f62d
 +++ b/src/main/java/io/papermc/paper/command/PaperCommands.java
 @@ -24,5 +24,6 @@ public final class PaperCommands {
          COMMANDS.forEach((s, command) -> {
-             server.server.getCommandMap().register(s, "Delta", command);
+             server.server.getCommandMap().register(s, "Paper", command);
          });
 +        server.server.getCommandMap().register("bukkit", new PaperPluginsCommand());
      }

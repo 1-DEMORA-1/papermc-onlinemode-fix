@@ -157,7 +157,7 @@ index 0000000000000000000000000000000000000000..95d3320c865d24609252063be07cddfd
 +
 +@DefaultQualifier(NonNull.class)
 +public final class PaperCommand extends Command {
-+    static final String BASE_PERM = "bukkit.command.delta.";
++    static final String BASE_PERM = "bukkit.command.paper.";
 +    // subcommand label -> subcommand
 +    private static final Map<String, PaperSubcommand> SUBCOMMANDS = Util.make(() -> {
 +        final Map<Set<String>, PaperSubcommand> commands = new HashMap<>();
@@ -185,10 +185,10 @@ index 0000000000000000000000000000000000000000..95d3320c865d24609252063be07cddfd
 +
 +    public PaperCommand(final String name) {
 +        super(name);
-+        this.description = "Delta related commands";
-+        this.usageMessage = "/delta [" + String.join(" | ", SUBCOMMANDS.keySet()) + "]";
++        this.description = "Paper related commands";
++        this.usageMessage = "/paper [" + String.join(" | ", SUBCOMMANDS.keySet()) + "]";
 +        final List<String> permissions = new ArrayList<>();
-+        permissions.add("bukkit.command.delta");
++        permissions.add("bukkit.command.paper");
 +        permissions.addAll(SUBCOMMANDS.keySet().stream().map(s -> BASE_PERM + s).toList());
 +        this.setPermission(String.join(";", permissions));
 +        final PluginManager pluginManager = Bukkit.getServer().getPluginManager();
@@ -294,13 +294,13 @@ index 0000000000000000000000000000000000000000..5e5ec700a368cfdaa1ea0b3f0fa82089
 +
 +    private static final Map<String, Command> COMMANDS = new HashMap<>();
 +    static {
-+        COMMANDS.put("delta", new PaperCommand("delta"));
++        COMMANDS.put("paper", new PaperCommand("paper"));
 +        COMMANDS.put("callback", new CallbackCommand("callback"));
 +    }
 +
 +    public static void registerCommands(final MinecraftServer server) {
 +        COMMANDS.forEach((s, command) -> {
-+            server.server.getCommandMap().register(s, "Delta", command);
++            server.server.getCommandMap().register(s, "Paper", command);
 +        });
 +    }
 +}

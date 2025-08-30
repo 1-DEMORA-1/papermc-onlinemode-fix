@@ -81,9 +81,9 @@ index 0000000000000000000000000000000000000000..9df9d09aa477d4cd3c496ba0933c816d
 +@ApiStatus.NonExtendable
 +public interface ServerBuildInfo {
 +    /**
-+     * The brand id for Delta.
++     * The brand id for Paper.
 +     */
-+    Key BRAND_PAPER_ID = Key.key("papermc", "delta");
++    Key BRAND_PAPER_ID = Key.key("papermc", "paper");
 +
 +    /**
 +     * Gets the {@code ServerBuildInfo}.
@@ -102,7 +102,7 @@ index 0000000000000000000000000000000000000000..9df9d09aa477d4cd3c496ba0933c816d
 +    /**
 +     * Gets the brand id of the server.
 +     *
-+     * @return the brand id of the server (e.g. "papermc:delta")
++     * @return the brand id of the server (e.g. "papermc:paper")
 +     */
 +    @NotNull Key brandId();
 +
@@ -118,7 +118,7 @@ index 0000000000000000000000000000000000000000..9df9d09aa477d4cd3c496ba0933c816d
 +    /**
 +     * Gets the brand name of the server.
 +     *
-+     * @return the brand name of the server (e.g. "Delta")
++     * @return the brand name of the server (e.g. "Paper")
 +     */
 +    @NotNull String brandName();
 +
